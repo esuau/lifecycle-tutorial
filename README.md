@@ -15,8 +15,9 @@ Build with Maven in a terminal:
 mvn install
 ```
 
-Run with `java`:
+Run the `console` module with `java`:
 
 ```
-java -jar target/esipe-tp-cdv-1.0-SNAPSHOT-jar-with-dependencies.jar
+cd console/
+java -jar console-1.0-SNAPSHOT-jar-with-dependencies.jar
 ``` 

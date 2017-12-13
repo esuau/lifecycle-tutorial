@@ -1,11 +1,12 @@
-package io.esuau.tutorial;
+package io.esuau.tutorial.console;
 
 import java.util.Scanner;
 import org.apache.log4j.Logger;
+import io.esuau.tutorial.business.*;
 
-public class Main {
+public class Console {
 
-    private final static Logger logger = Logger.getLogger(Main.class.getName());
+    private final static Logger logger = Logger.getLogger(Console.class.getName());
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -19,15 +20,10 @@ public class Main {
         }
         logger.info("n = " + n);
         for (int i = 1; i <= n; i++) {
-            String str = i + ": " + fibonacci(i);
+            String str = i + ": " + Fibonacci.fibonacci(i);
             System.out.println(str);
             logger.info(str);
         }
-    }
-
-    private static long fibonacci(int n) {
-        if (n <= 1) return n;
-        else return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
 }
