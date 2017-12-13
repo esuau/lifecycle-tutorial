@@ -2,7 +2,7 @@ package io.esuau.tutorial.console;
 
 import java.util.Scanner;
 import org.apache.log4j.Logger;
-import io.esuau.tutorial.business.*;
+import io.esuau.tutorial.business.Fibonacci;
 
 public class Console {
 
