@@ -7,18 +7,16 @@ A simple Java project using software lifecycle tools:
 * JUnit
 * Nexus
 
-# Use 
-## Compile and launch
+# Build and run
 
-Compile the sources in a terminal using `javac`:
-
-```
-javac src/io/esuau/tutorial/Main.java 
-```
-
-Then, go to the `src/` folder and run the program with `java`:
+Build with Maven in a terminal:
 
 ```
-cd src/
-java io.esuau.tutorial.Main
+mvn install
 ```
+
+Run with `java`:
+
+```
+java -jar target/esipe-tp-cdv-1.0-SNAPSHOT-jar-with-dependencies.jar
+``` 
